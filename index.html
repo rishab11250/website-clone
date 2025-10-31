@@ -11,6 +11,61 @@
 
 <body>
     <div class="main">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <div class="mobile-nav-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="logo-icon-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.7 20">
+                        <path fill="#4BC1BE" fill-rule="evenodd"
+                            d="M116.9 3c-.9-.9-1.9-1.6-3.1-2.1-1.2-.5-2.6-.8-4-.8-1.5 0-2.8.3-4 .8-1.2.5-2.3 1.2-3.2 2.1-.9.9-1.6 2-2.1 3.2-.5 1.2-.7 2.5-.7 3.8 0 1.3.2 2.6.7 3.8.5 1.2 1.1 2.2 2 3l2.8-5.1 2.8 2.8 3.1-7.4-1.3-.6 1.8-1.3 1.8-1.3.3 2.2.3 2.2-1.3-.6-4 9.5-3-2.9-1.9 3.6c.6.5 1.3.8 2 1.1 1.2.5 2.6.8 4 .8 1.5 0 2.8-.3 4-.8 2.4-1 4.3-2.9 5.2-5.3.5-1.2.7-2.5.7-3.8 0-1.3-.2-2.6-.7-3.8-.7-1.2-1.4-2.2-2.2-3.1"
+                            clip-rule="evenodd"></path>
+                        <path fill="#fff"
+                            d="M0 19.7h13.6v-3.1H3.4V.3H0zM18.7.3v19.3h3.4V.3zm18 14.9L30.8.3H27l8 19.5h3L46 .3h-3.7zM65.2.3H50.9v19.3h14.5v-3H54.3v-5.2H64v-3h-9.7v-5h10.9zM149 13.7 138.6.3h-3.1v19.3h3.3V5.9l10.7 13.8h2.8V.3H149zm-53.1 2.9-2.2-2.2c-.8.8-1.7 1.4-2.5 1.8-.8.5-1.9.7-3 .7-.9 0-1.8-.2-2.6-.5-.8-.4-1.5-.9-2-1.5-.6-.6-1-1.4-1.3-2.2-.3-.8-.5-1.7-.5-2.7 0-1 .2-1.9.5-2.7s.8-1.6 1.3-2.2c.6-.6 1.2-1.1 2-1.5.8-.4 1.6-.5 2.6-.5 1.1 0 2.1.2 3 .7.9.4 1.7 1 2.5 1.7L95.8 3c-.5-.4-.9-.8-1.5-1.2-.5-.4-1.1-.7-1.7-1-.6-.3-1.3-.5-2-.6-.7-.1-1.5-.2-2.4-.2-1.5 0-2.8.3-4 .8C83 1.3 81.9 2 81 2.9c-.9.9-1.6 2-2.1 3.2-.5 1.2-.7 2.5-.7 3.9s.2 2.7.7 3.9c.5 1.2 1.2 2.3 2.1 3.2.9.9 1.9 1.6 3.1 2.1 1.2.5 2.5.8 3.9.8.9 0 1.7-.1 2.5-.2.7-.2 1.4-.4 2.1-.7.6-.3 1.2-.7 1.8-1.1.5-.4 1-.9 1.5-1.4M125.5.3v19.3h3.4V.3zm48.3 14.4L169.2.4h-3.7l6.7 19.5h2.9l4.9-14 4.8 13.9h2.9L194.4.3h-3.6l-4.6 14.3L181.4.2h-2.9zm33-14.5h-3.1l-8.5 19.5h3.5l2-4.7h9.1l2 4.7h3.6zm1.7 11.8h-6.7l3.3-7.7zm17.3-8.5h6.1V.3h-15.7v3.1h6.1v16.2h3.4V3.5zm26.9 13.1-2.2-2.2c-.8.8-1.7 1.4-2.5 1.8-.8.5-1.9.7-3 .7-.9 0-1.8-.2-2.6-.5-.8-.4-1.5-.9-2-1.5-.6-.6-1-1.4-1.3-2.2-.3-.8-.5-1.7-.5-2.7 0-1 .2-1.9.5-2.7.3-.8.8-1.6 1.3-2.2.6-.6 1.2-1.1 2-1.5.8-.4 1.6-.5 2.6-.5 1.1 0 2.1.2 3 .7.9.4 1.7 1 2.5 1.7l2.2-2.5c-.5-.4-.9-.8-1.5-1.2-.5-.4-1.1-.7-1.7-1-.6-.3-1.3-.5-2-.6-.8-.1-1.6-.2-2.5-.2-1.5 0-2.8.3-4 .8-1.2.5-2.3 1.2-3.1 2.2-.9.9-1.6 2-2.1 3.2-.5 1.2-.7 2.5-.7 3.9s.2 2.7.7 3.9c.5 1.2 1.2 2.3 2.1 3.2.9.9 1.9 1.6 3.1 2.1 1.2.5 2.5.8 3.9.8.9 0 1.7-.1 2.5-.2.7-.2 1.4-.4 2.1-.7.6-.3 1.2-.7 1.8-1.1.4-.5.9-1 1.4-1.5m17.6-5.1v8.1h3.4V.3h-3.4v8h-9.2v-8h-3.4v19.3h3.4v-8.1z">
+                        </path>
+                    </svg>
+                </div>
+                <label for="menu-toggle" class="mobile-menu-close">&times;</label>
+            </div>
+            <div class="mobile-menu-auth">
+                <a href="#" class="mobile-login">Login</a>
+                <a href="#" class="mobile-register">Register</a>
+            </div>
+            <nav class="mobile-menu-nav">
+                <a href="#" class="mobile-nav-link active">Coins</a>
+                <a href="#" class="mobile-nav-link">Portfolio</a>
+                <a href="#" class="mobile-nav-link">Overview</a>
+                <a href="#" class="mobile-nav-link">Trending</a>
+                <a href="#" class="mobile-nav-link">Vote</a>
+                <a href="#" class="mobile-nav-link">Exchanges</a>
+                <a href="#" class="mobile-nav-link">Widgets</a>
+                <a href="#" class="mobile-nav-link">API <span>New!</span></a>
+            </nav>
+            <div class="mobile-menu-footer">
+                <div class="mobile-menu-controls">
+                    <button class="mobile-control-btn">USD ($)</button>
+                    <button class="mobile-control-btn">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2961/2961545.png" height="20vh"
+                            style=" filter: brightness(0) saturate(100%) invert(62%) sepia(5%) saturate(1844%) hue-rotate(183deg) brightness(85%) contrast(81%);"
+                            alt="Dark Mode"> Dark
+                    </button>
+                    <button class="mobile-control-btn">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2875/2875045.png" height="20vh" style=" filter: brightness(0) saturate(100%) invert(62%) sepia(5%) saturate(1844%) hue-rotate(183deg) brightness(85%) contrast(81%);" alt="Refresh Rate"> 5s
+                    </button>
+                </div>
+                <div class="mobile-menu-social">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/20/20837.png" alt="Twitter icon"
+                            class="social-icon"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" alt="Facebook icon"
+                            class="social-icon"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt="Telegram icon"
+                            class="social-icon"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt="Telegram icon"
+                            class="social-icon"></a>
+                </div>
+            </div>
+        </div>
+        <label for="menu-toggle" class="menu-overlay" id="menu-overlay"></label>
+
         <div class="header">
             <div class="top-header">
                 <div class="logo-icon">
@@ -23,6 +78,7 @@
                         </path>
                     </svg>
                 </div>
+
                 <div class="header-top-right">
                     <div class="lightbulb">
                         <div class="lightbulbicon">
@@ -72,7 +128,19 @@
                         <input type="text" placeholder="Search...">
                     </div>
                 </div>
+
+                <div class="mobile-header-icons">
+                    <button class="mobile-search-icon">
+                        <img src="https://www.svgrepo.com/show/532555/search.svg" alt="Search">
+                    </button>
+                    <label for="menu-toggle" class="hamburger-btn" id="hamburger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
             </div>
+
             <div class="bottom-header">
                 <a class="coins active">
                     Coins
@@ -204,317 +272,338 @@
                 </div>
             </div>
         </div>
-        <div class="table">
-            <div class="main-table-filters">
-                <div class="filters">
-                    <div class="filer">
-                        Layout
-                    </div>
-                    <div class="filer">
-                        Categories
-                    </div>
-                    <div class="filer">
-                        Exchanges
-                    </div>
-                    <div class="filer">
-                        Platforms
-                    </div>
-                    <div class="filer">
-                        <img src="https://img.icons8.com/?size=40&id=31494&format=png" alt="" class="filter">
-                        0
-                    </div>
-                    <div class="filer">
-                        <img src="https://img.icons8.com/?size=50&id=87&format=png" alt="" class="filter">
-                        0
+        <div class="table-wrapper">
+            <div class="table">
+                <div class="main-table-filters">
+                    <div class="filters">
+                        <div class="filer">
+                            Layout
+                        </div>
+                        <div class="filer">
+                            Categories
+                        </div>
+                        <div class="filer">
+                            Exchanges
+                        </div>
+                        <div class="filer">
+                            Platforms
+                        </div>
+                        <div class="filer">
+                            <img src="https://img.icons8.com/?size=40&id=31494&format=png" alt="" class="filter">
+                            0
+                        </div>
+                        <div class="filer">
+                            <img src="https://img.icons8.com/?size=50&id=87&format=png" alt="" class="filter">
+                            0
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="table-content">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Coin</th>
-                            <th>Price</th>
-                            <th>Market Cap</th>
-                            <th>Volume 24h</th>
-                            <th>Liquidity ±2%</th>
-                            <th>All-time High</th>
-                            <th>1h</th>
-                            <th>24h</th>
-                            <th>Weekly</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="coin-row">
-                            <td class="rank">
-                                <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
-                                        alt="" class="filter"></span> 1
-                            </td>
-                            <td class="coin-name-cell"><img
-                                    src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/btc.webp"
-                                    alt="BTC icon" class="coin-icon">
-                                <div class="name-symbol">
-                                    <span class="symbol">BTC</span> <span class="full-name">Bitcoin</span>
-                                </div>
-                            </td>
-                            <td>$109,753.15</td>
-                            <td>$2.1888 T</td>
-                            <td>$66.32 B</td>
-                            <td>$1.6463 B</td>
-                            <td>$125,928.28</td>
-                            <td class="change red">0.45%</td>
-                            <td class="change green">0.95%</td>
-                            <td class="chart-cell"><img
-                                    src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
-                                    alt="BTC Weekly Chart" class="weekly-chart"></td>
-                        </tr>
-                        <tr class="coin-row">
-                            <td class="rank">
-                                <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
-                                        alt="Heart icon" class="filter"></span>
-                                2
-                            </td>
-                            <td class="coin-name-cell">
-                                <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/eth.webp"
-                                    alt="ETH icon" class="coin-icon">
-                                <div class="name-symbol">
-                                    <span class="symbol">ETH</span>
-                                    <span class="full-name">Ethereum</span>
-                                </div>
-                            </td>
-                            <td>$3,841.60</td>
-                            <td>$452.40 B</td>
-                            <td>$35.80 B</td>
-                            <td>$1.0955 B</td>
-                            <td>$4,942.49</td>
-                            <td class="change red">0.72%</td>
-                            <td class="change green">0.69%</td>
-                            <td class="chart-cell"><img
-                                    src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
-                                    alt="ETH Weekly Chart" class="weekly-chart"></td>
-                        </tr>
-                        <tr class="coin-row">
-                            <td class="rank">
-                                <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
-                                        alt="Heart icon" class="filter"></span>
-                                3
-                            </td>
-                            <td class="coin-name-cell">
-                                <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/bnb.webp"
-                                    alt="BNB icon" class="coin-icon">
-                                <div class="name-symbol">
-                                    <span class="symbol">BNB</span>
-                                    <span class="full-name">BNB</span>
-                                </div>
-                            </td>
-                            <td>$1,081.50</td>
-                            <td>$160.71 B</td>
-                            <td>$4.980 B</td>
-                            <td>$226.26 M</td>
-                            <td>$1,374.09</td>
-                            <td class="change red">0.54%</td>
-                            <td class="change green">1.83%</td>
-                            <td class="chart-cell"><img
-                                    src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
-                                    alt="BNB Weekly Chart" class="weekly-chart"></td>
-                        </tr>
-                        <tr class="coin-row">
-                            <td class="rank">
-                                <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
-                                        alt="Heart icon" class="filter"></span>
-                                4
-                            </td>
-                            <td class="coin-name-cell">
-                                <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/xrp.webp"
-                                    alt="XRP icon" class="coin-icon">
-                                <div class="name-symbol">
-                                    <span class="symbol">XRP</span>
-                                    <span class="full-name">XRP</span>
-                                </div>
-                            </td>
-                            <td>$2.5065</td>
-                            <td>$150.43 B</td>
-                            <td>$4.384 B</td>
-                            <td>$452.84 M</td>
-                            <td>$3.92</td>
-                            <td class="change red">0.10%</td>
-                            <td class="change green">0.18%</td>
-                            <td class="chart-cell"><img
-                                    src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
-                                    alt="XRP Weekly Chart" class="weekly-chart"></td>
-                        </tr>
-                        <tr class="coin-row">
-                            <td class="rank">
-                                <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
-                                        alt="Heart icon" class="filter"></span>
-                                5
-                            </td>
-                            <td class="coin-name-cell">
-                                <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/usdt.webp"
-                                    alt="USDT icon" class="coin-icon">
-                                <div class="name-symbol">
-                                    <span class="symbol">USDT</span>
-                                    <span class="full-name">Tether</span>
-                                </div>
-                            </td>
-                            <td>$1.0005</td>
-                            <td>$148.98 B</td>
-                            <td>$133.6 B</td>
-                            <td>$10.447 B</td>
-                            <td>$1.08</td>
-                            <td class="change green">0.01%</td>
-                            <td class="change green">0.15%</td>
-                            <td class="chart-cell"><img
-                                    src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
-                                    alt="USDT Weekly Chart" class="weekly-chart"></td>
-                        </tr>
-                        <tr class="coin-row">
-                            <td class="rank">
-                                <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
-                                        alt="Heart icon" class="filter"></span>
-                                6
-                            </td>
-                            <td class="coin-name-cell">
-                                <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/sol.webp"
-                                    alt="SOL icon" class="coin-icon">
-                                <div class="name-symbol">
-                                    <span class="symbol">SOL</span>
-                                    <span class="full-name">Solana</span>
-                                </div>
-                            </td>
-                            <td>$186.73</td>
-                            <td>$102.67 B</td>
-                            <td>$8.450 B</td>
-                            <td>$379.79 M</td>
-                            <td>$293.15</td>
-                            <td class="change red">0.56%</td>
-                            <td class="change red">0.38%</td>
-                            <td class="chart-cell"><img
-                                    src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
-                                    alt="SOL Weekly Chart" class="weekly-chart"></td>
-                        </tr>
-                        <tr class="coin-row">
-                            <td class="rank">
-                                <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
-                                        alt="Heart icon" class="filter"></span>
-                                7
-                            </td>
-                            <td class="coin-name-cell">
-                                <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/usdc.webp"
-                                    alt="USDC icon" class="coin-icon">
-                                <div class="name-symbol">
-                                    <span class="symbol">USDC</span>
-                                    <span class="full-name">USDC</span>
-                                </div>
-                            </td>
-                            <td>$1.0008</td>
-                            <td>$75.861 B</td>
-                            <td>$9.810 B</td>
-                            <td>$3.8834 B</td>
-                            <td>$1.09</td>
-                            <td class="change green">0.05%</td>
-                            <td class="change green">0.2%</td>
-                            <td class="chart-cell"><img
-                                    src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
-                                    alt="USDC Weekly Chart" class="weekly-chart"></td>
-                        </tr>
-                        <tr class="coin-row">
-                            <td class="rank">
-                                <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
-                                        alt="Heart icon" class="filter"></span>
-                                8
-                            </td>
-                            <td class="coin-name-cell">
-                                <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/trx.webp"
-                                    alt="TRX icon" class="coin-icon">
-                                <div class="name-symbol">
-                                    <span class="symbol">TRX</span>
-                                    <span class="full-name">TRON</span>
-                                </div>
-                            </td>
-                            <td>$0.296979</td>
-                            <td>$25.648 B</td>
-                            <td>$1.787 B</td>
-                            <td>$234.17 M</td>
-                            <td>$0.439113</td>
-                            <td class="change green">0.72%</td>
-                            <td class="change green">0.72%</td>
-                            <td class="chart-cell"><img
-                                    src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
-                                    alt="TRX Weekly Chart" class="weekly-chart"></td>
-                        </tr>
-                        <tr class="coin-row">
-                            <td class="rank">
-                                <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
-                                        alt="Heart icon" class="filter"></span>
-                                9
-                            </td>
-                            <td class="coin-name-cell">
-                                <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/doge.webp"
-                                    alt="DOGE icon" class="coin-icon">
-                                <div class="name-symbol">
-                                    <span class="symbol">DOGE</span>
-                                    <span class="full-name">Dogecoin</span>
-                                </div>
-                            </td>
-                            <td>$0.185211</td>
-                            <td>$24.572 B</td>
-                            <td>$3.226 B</td>
-                            <td>$200.24 M</td>
-                            <td>$0.737171</td>
-                            <td class="change green">0.96%</td>
-                            <td class="change red">0.72%</td>
-                            <td class="chart-cell"><img
-                                    src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
-                                    alt="DOGE Weekly Chart" class="weekly-chart"></td>
-                        </tr>
-                        <tr class="coin-row">
-                            <td class="rank">
-                                <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
-                                        alt="Heart icon" class="filter"></span>
-                                10
-                            </td>
-                            <td class="coin-name-cell">
-                                <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/ada.webp"
-                                    alt="ADA icon" class="coin-icon">
-                                <div class="name-symbol">
-                                    <span class="symbol">ADA</span>
-                                    <span class="full-name">Cardano</span>
-                                </div>
-                            </td>
-                            <td>$0.613250</td>
-                            <td>$23.428 B</td>
-                            <td>$856.6 M</td>
-                            <td>$214.95 M</td>
-                            <td>$3.09</td>
-                            <td class="change red">0.4%</td>
-                            <td class="change red">0.81%</td>
-                            <td class="chart-cell"><img
-                                    src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
-                                    alt="ADA Weekly Chart" class="weekly-chart"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="table-footer">
-                <div class="pagination">
-                    <button class="prev-next-btn arrow-btn">
-                        <svg class="arrow-up" viewBox="0 0 24 24">
-                            <path fill="#9DAABF"
-                                d="M12.7071 9.29289C12.3166 8.90237 11.6834 8.90237 11.2929 9.29289L6.29289 14.2929C5.90237 14.6834 5.90237 15.3166 6.29289 15.7071C6.68342 16.0976 7.31658 16.0976 7.70711 15.7071L12 11.4142L16.2929 15.7071C16.6834 16.0976 17.3166 16.0976 17.7071 15.7071C18.0976 15.3166 18.0976 14.6834 17.7071 14.2929L12.7071 9.29289Z" />
-                        </svg>
-                    </button>
-                    <button class="prev-next-btn">Previous 10</button>
-                    <div class="pages">
-                        <button class="page-num active-page">1</button>
-                        <button class="page-num">2</button>
-                        <button class="page-num">3</button>
-                        <span class="dots">...</span>
-                        <button class="page-num">5324</button>
+                <div class="table-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Coin</th>
+                                <th>Price</th>
+                                <th>Market Cap</th>
+                                <th class="desktop-only">Volume 24h</th>
+                                <th class="desktop-only">Liquidity ±2%</th>
+                                <th class="desktop-only">All-time High</th>
+                                <th class="desktop-only">1h</th>
+                                <th class="desktop-only">24h</th>
+                                <th class="desktop-only">Weekly</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="coin-row">
+                                <td class="rank">
+                                    <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
+                                            alt="" class="filter"></span> 1
+                                </td>
+                                <td class="coin-name-cell"><img
+                                        src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/btc.webp"
+                                        alt="BTC icon" class="coin-icon">
+                                    <div class="name-symbol">
+                                        <span class="symbol">BTC</span> <span class="full-name">Bitcoin</span>
+                                    </div>
+                                </td>
+                                <td>$109,753.15</td>
+                                <td>$2.1888 T</td>
+                                <td class="desktop-only">$66.32 B</td>
+                                <td class="desktop-only">$1.6463 B</td>
+                                <td class="desktop-only">$125,928.28</td>
+                                <td class="change red desktop-only">0.45%</td>
+                                <td class="change green desktop-only">0.95%</td>
+                                <td class="chart-cell desktop-only"><img
+                                        src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
+                                        alt="BTC Weekly Chart" class="weekly-chart"></td>
+                            </tr>
+                            <tr class="coin-row">
+                                <td class="rank">
+                                    <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
+                                            alt="Heart icon" class="filter"></span>
+                                    2
+                                </td>
+                                <td class="coin-name-cell">
+                                    <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/eth.webp"
+                                        alt="ETH icon" class="coin-icon">
+                                    <div class="name-symbol">
+                                        <span class="symbol">ETH</span>
+                                        <span class="full-name">Ethereum</span>
+                                    </div>
+                                </td>
+                                <td>$3,841.60</td>
+                                <td>$452.40 B</td>
+                                <td class="desktop-only">$35.80 B</td>
+                                <td class="desktop-only">$1.0955 B</td>
+                                <td class="desktop-only">$4,942.49</td>
+                                <td class="change red desktop-only">0.72%</td>
+                                <td class="change green desktop-only">0.69%</td>
+                                <td class="chart-cell desktop-only"><img
+                                        src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
+                                        alt="ETH Weekly Chart" class="weekly-chart"></td>
+                            </tr>
+                            <tr class="coin-row">
+                                <td class="rank">
+                                    <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
+                                            alt="Heart icon" class="filter"></span>
+                                    3
+                                </td>
+                                <td class="coin-name-cell">
+                                    <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/bnb.webp"
+                                        alt="BNB icon" class="coin-icon">
+                                    <div class="name-symbol">
+                                        <span class="symbol">BNB</span>
+                                        <span class="full-name">BNB</span>
+                                    </div>
+                                </td>
+                                <td>$1,081.50</td>
+                                <td>$160.71 B</td>
+                                <td class="desktop-only">$4.980 B</td>
+                                <td class="desktop-only">$226.26 M</td>
+                                <td class="desktop-only">$1,374.09</td>
+                                <td class="change red desktop-only">0.54%</td>
+                                <td class="change green desktop-only">1.83%</td>
+                                <td class="chart-cell desktop-only"><img
+                                        src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
+                                        alt="BNB Weekly Chart" class="weekly-chart"></td>
+                            </tr>
+                            <tr class="coin-row">
+                                <td class="rank">
+                                    <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
+                                            alt="Heart icon" class="filter"></span>
+                                    4
+                                </td>
+                                <td class="coin-name-cell">
+                                    <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/xrp.webp"
+                                        alt="XRP icon" class="coin-icon">
+                                    <div class="name-symbol">
+                                        <span class="symbol">XRP</span>
+                                        <span class="full-name">XRP</span>
+                                    </div>
+                                </td>
+                                <td>$2.5065</td>
+                                <td>$150.43 B</td>
+                                <td class="desktop-only">$4.384 B</td>
+                                <td class="desktop-only">$452.84 M</td>
+                                <td class="desktop-only">$3.92</td>
+                                <td class="change red desktop-only">0.10%</td>
+                                <td class="change green desktop-only">0.18%</td>
+                                <td class="chart-cell desktop-only"><img
+                                        src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
+                                        alt="XRP Weekly Chart" class="weekly-chart"></td>
+                            </tr>
+                            <tr class="coin-row">
+                                <td class="rank">
+                                    <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
+                                            alt="Heart icon" class="filter"></span>
+                                    5
+                                </td>
+                                <td class="coin-name-cell">
+                                    <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/usdt.webp"
+                                        alt="USDT icon" class="coin-icon">
+                                    <div class="name-symbol">
+                                        <span class="symbol">USDT</span>
+                                        <span class="full-name">Tether</span>
+                                    </div>
+                                </td>
+                                <td>$1.0005</td>
+                                <td>$148.98 B</td>
+                                <td class="desktop-only">$133.6 B</td>
+                                <td class="desktop-only">$10.447 B</td>
+                                <td class="desktop-only">$1.08</td>
+                                <td class="change green desktop-only">0.01%</td>
+                                <td class="change green desktop-only">0.15%</td>
+                                <td class="chart-cell desktop-only"><img
+                                        src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
+                                        alt="USDT Weekly Chart" class="weekly-chart"></td>
+                            </tr>
+                            <tr class="coin-row">
+                                <td class="rank">
+                                    <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
+                                            alt="Heart icon" class="filter"></span>
+                                    6
+                                </td>
+                                <td class="coin-name-cell">
+                                    <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/sol.webp"
+                                        alt="SOL icon" class="coin-icon">
+                                    <div class="name-symbol">
+                                        <span class="symbol">SOL</span>
+                                        <span class="full-name">Solana</span>
+                                    </div>
+                                </td>
+                                <td>$186.73</td>
+                                <td>$102.67 B</td>
+                                <td class="desktop-only">$8.450 B</td>
+                                <td class="desktop-only">$379.79 M</td>
+                                <td class="desktop-only">$293.15</td>
+                                <td class="change red desktop-only">0.56%</td>
+                                <td class="change red desktop-only">0.38%</td>
+                                <td class="chart-cell desktop-only"><img
+                                        src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
+                                        alt="SOL Weekly Chart" class="weekly-chart"></td>
+                            </tr>
+                            <tr class="coin-row">
+                                <td class="rank">
+                                    <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
+                                            alt="Heart icon" class="filter"></span>
+                                    7
+                                </td>
+                                <td class="coin-name-cell">
+                                    <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/usdc.webp"
+                                        alt="USDC icon" class="coin-icon">
+                                    <div class="name-symbol">
+                                        <span class="symbol">USDC</span>
+                                        <span class="full-name">USDC</span>
+                                    </div>
+                                </td>
+                                <td>$1.0008</td>
+                                <td>$75.861 B</td>
+                                <td class="desktop-only">$9.810 B</td>
+                                <td class="desktop-only">$3.8834 B</td>
+                                <td class="desktop-only">$1.09</td>
+                                <td class="change green desktop-only">0.05%</td>
+                                <td class="change green desktop-only">0.2%</td>
+                                <td class="chart-cell desktop-only"><img
+                                        src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
+                                        alt="USDC Weekly Chart" class="weekly-chart"></td>
+                            </tr>
+                            <tr class="coin-row">
+                                <td class="rank">
+                                    <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
+                                            alt="Heart icon" class="filter"></span>
+                                    8
+                                </td>
+                                <td class="coin-name-cell">
+                                    <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/trx.webp"
+                                        alt="TRX icon" class="coin-icon">
+                                    <div class="name-symbol">
+                                        <span class="symbol">TRX</span>
+                                        <span class="full-name">TRON</span>
+                                    </div>
+                                </td>
+                                <td>$0.296979</td>
+                                <td>$25.648 B</td>
+                                <td class="desktop-only">$1.787 B</td>
+                                <td class="desktop-only">$234.17 M</td>
+                                <td class="desktop-only">$0.439113</td>
+                                <td class="change green desktop-only">0.72%</td>
+                                <td class="change green desktop-only">0.72%</td>
+                                <td class="chart-cell desktop-only"><img
+                                        src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
+                                        alt="TRX Weekly Chart" class="weekly-chart"></td>
+                            </tr>
+                            <tr class="coin-row">
+                                <td class="rank">
+                                    <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
+                                            alt="Heart icon" class="filter"></span>
+                                    9
+                                </td>
+                                <td class="coin-name-cell">
+                                    <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/doge.webp"
+                                        alt="DOGE icon" class="coin-icon">
+                                    <div class="name-symbol">
+                                        <span class="symbol">DOGE</span>
+                                        <span class="full-name">Dogecoin</span>
+                                    </div>
+                                </td>
+                                <td>$0.185211</td>
+                                <td>$24.572 B</td>
+                                <td class="desktop-only">$3.226 B</td>
+                                <td class="desktop-only">$200.24 M</td>
+                                <td class="desktop-only">$0.737171</td>
+                                <td class="change green desktop-only">0.96%</td>
+                                <td class="change red desktop-only">0.72%</td>
+                                <td class="chart-cell desktop-only"><img
+                                        src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
+                                        alt="DOGE Weekly Chart" class="weekly-chart"></td>
+                            </tr>
+                            <tr class="coin-row">
+                                <td class="rank">
+                                    <span class="heart-icon"><img src="https://img.icons8.com/?size=50&id=87&format=png"
+                                            alt="Heart icon" class="filter"></span>
+                                    10
+                                </td>
+                                <td class="coin-name-cell">
+                                    <img src="https://lcw.nyc3.cdn.digitaloceanspaces.com/production/currencies/32/ada.webp"
+                                        alt="ADA icon" class="coin-icon">
+                                    <div class="name-symbol">
+                                        <span class="symbol">ADA</span>
+                                        <span class="full-name">Cardano</span>
+                                    </div>
+                                </td>
+                                <td>$0.613250</td>
+                                <td>$23.428 B</td>
+                                <td class="desktop-only">$856.6 M</td>
+                                <td class="desktop-only">$214.95 M</td>
+                                <td class="desktop-only">$3.09</td>
+                                <td class="change red desktop-only">0.4%</td>
+                                <td class="change red desktop-only">0.81%</td>
+                                <td class="chart-cell desktop-only"><img
+                                        src="https://res-console.cloudinary.com/dhr1jtyi2/thumbnails/v1/image/upload/v1761929785/ZG93bmxvYWRfMV9wZ3B6c2c=/drilldown"
+                                        alt="ADA Weekly Chart" class="weekly-chart"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-footer">
+                    <div class="pagination">
+                        <button class="prev-next-btn arrow-btn" id="pagination-prev-mobile">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M15 6L9 12L15 18" stroke="#9DAABF" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                        </button>
+
+                        <button class="prev-next-btn desktop-only-flex">Previous 10</button>
+
+                        <div class="pages">
+                            <button class="page-num active-page">1</button>
+                            <button class="page-num desktop-only-flex">2</button>
+                            <button class="page-num desktop-only-flex">3</button>
+                            <span class="dots">...</span>
+                            <button class="page-num">5324</button>
+                        </div>
+
+                        <button class="prev-next-btn desktop-only-flex">Next 10</button>
+
+                        <button class="prev-next-btn arrow-btn" id="pagination-next-mobile">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M9 18L15 12L9 6" stroke="#9DAABF" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                        </button>
+
+                        <button class="prev-next-btn coins-btn last-pagination-btn desktop-only-flex">10 Coins</button>
                     </div>
-                    <button class="prev-next-btn">Next 10</button>
-                    <button class="prev-next-btn coins-btn last-pagination-btn">10 Coins</button>
                 </div>
             </div>
         </div>
@@ -554,7 +643,7 @@
                 <div class="footer-col about-col">
                     <h3 class="col-title">About Us</h3>
                     <div class="about-content">
-                        <div class="logo-icon">
+                        <div class="logo-icon-footer">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.7 20">
                                 <path fill="#4BC1BE" fill-rule="evenodd"
                                     d="M116.9 3c-.9-.9-1.9-1.6-3.1-2.1-1.2-.5-2.6-.8-4-.8-1.5 0-2.8.3-4 .8-1.2.5-2.3 1.2-3.2 2.1-.9.9-1.6 2-2.1 3.2-.5 1.2-.7 2.5-.7 3.8 0 1.3.2 2.6.7 3.8.5 1.2 1.1 2.2 2 3l2.8-5.1 2.8 2.8 3.1-7.4-1.3-.6 1.8-1.3 1.8-1.3.3 2.2.3 2.2-1.3-.6-4 9.5-3-2.9-1.9 3.6c.6.5 1.3.8 2 1.1 1.2.5 2.6.8 4 .8 1.5 0 2.8-.3 4-.8 2.4-1 4.3-2.9 5.2-5.3.5-1.2.7-2.5.7-3.8 0-1.3-.2-2.6-.7-3.8-.7-1.2-1.4-2.2-2.2-3.1"
@@ -567,14 +656,14 @@
                         <p>Complete cryptocurrency market coverage with live coin prices, charts and crypto market cap
                             featuring 53239 coins on 984 exchanges.</p>
                         <div class="social-icons">
-                            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/733/733579.png"
-                                    alt="Twitter icon" class="social-icon"></a>
-                            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968968.png"
-                                    alt="Facebook icon" class="social-icon"></a>
-                            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1946/1946547.png"
-                                    alt="Telegram icon" class="social-icon"></a>
                             <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/20/20837.png"
-                                    class="social-icon"></a>
+                                    alt="Twitter icon" class="social-icon"></a>
+                            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png"
+                                    alt="Facebook icon" class="social-icon"></a>
+                            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/733/733579.png"
+                                    alt="Telegram icon" class="social-icon"></a>
+                            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png"
+                                    alt="Telegram icon" class="social-icon"></a>
                         </div>
                     </div>
                 </div>
