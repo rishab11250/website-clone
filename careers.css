@@ -1,0 +1,159 @@
+#track {
+    justify-content: flex-start;
+    background-color: rgba(188, 213, 255, 0.25);
+    margin-top: -5vh;
+}
+
+#hiring {
+    margin-left: 20px;
+    color: #051C57;
+    font-size: large;
+    font-weight: 700;
+    padding-left: 7vw;
+}
+
+#our {
+    margin-bottom: 5vh;
+}
+
+#ts {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    color: #405dfe;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+
+.careers-list {
+    margin-top: 3vh;
+    padding-left: 0;
+}
+
+.careers-list li {
+    color: #465782;
+    /* Darker text */
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    padding-left: 2rem;
+}
+
+.careers-list li::before {
+    top: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.service-list li::before {
+    content: '✔';
+    color: #f08800;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+#principles-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 7vh;
+}
+
+#principles-grid .service-list li {
+    font-size: 1rem;
+    color: #555;
+    font-weight: normal;
+}
+
+#zwayam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#track {
+    justify-content: flex-start;
+    background-color: rgba(188, 213, 255, 0.25);
+    margin-top: -5vh;
+}
+
+#hiring {
+    margin-left: 20px;
+    color: #051C57;
+    font-size: large;
+    font-weight: 700;
+    padding-left: 7vw;
+}
+
+#our {
+    margin-bottom: 5vh;
+}
+
+#ts {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    color: #405dfe;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+
+.hero .solving h1 {
+    color: #369AFD;
+}
+
+.careers-list {
+    margin-top: 3vh;
+    padding-left: 0;
+}
+
+.careers-list li {
+    color: #465782;
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    padding-left: 2rem;
+}
+
+.careers-list li::before {
+    top: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.service-list li::before {
+    content: '✔';
+    color: #f08800;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+#principles-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 7vh;
+}
+
+#principles-grid .service-list li {
+    font-size: 1rem;
+    color: #555;
+    font-weight: normal;
+}
+
+#zwayam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 980px) {
+    #principles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #hiring {
+        padding-left: 2vw;
+    }
+
+    #principles-grid {
+        grid-template-columns: 1fr;
+    }
+}
