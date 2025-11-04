@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-image: url(https://res.cloudinary.com/dhr1jtyi2/image/upload/v1761312829/unnamed_kafekl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 0 8vw;
+    flex-direction: column;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    color: white;
+    background-color: #4B367C;
+    z-index: 1000;
+    border-bottom: 0.0625rem solid #4a475e;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative; 
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+.menu-toggle {
+    display: none; 
+}
+
+.hamburger-menu {
+    display: none; 
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+.search-icon a {
+    color: #d0d0d0;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon img {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+.theme{
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.nav-links a,
+.dropbtn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    padding: 0.5rem 0.8vw;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-links a:hover,
+.nav-links a.active-link {
+    background-color: black;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown .dropbtn {
+    padding-right: 0.25rem;
+}
+
+.dropdownbtn {
+    height: 2rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4B367C;
+    min-width: 13.75rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    z-index: 1;
+    overflow: hidden;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+}
+
+.dropdown-content-right {
+    left: auto;
+    right: 0;
+}
+
+.dropdown-content a {
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dropdown-content a:hover {
+    background-color: #4B367C;
+    color: #ffffff;
+}
+.popular{
+    background-color: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 75vh;
+
+}
+.roller{
+    display: flex;
+    flex-direction: row;
+    padding: 5vh;
+}
+.game{
+    height: 50vh;
+}
+
+.game img {
+    height: 57vh;
+    width: 19.75vw;
+}
+button{
+    height: 1.5vh;
+    width: .65vw;
+    cursor: pointer;
+    background-color: #aaaaaa;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1vw;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+.main2{
+    background-color: #27292D;
+    display: flex;
+    flex-direction: column;
+}
+.recent{
+    background-color: #1F2025;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+}
+.recentlyadded{
+    color: white;
+    background-color: #4B367C;
+    font-size: xx-large;
+    padding: 1vh;
+    height: fit-content;
+    width: fit-content;
+    margin: 3vh; 
+}
+.recentrow{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3vh;
+    gap: 1vw;
+}
+.recentrow img{
+    height: 40vh;
+    width: 12.2vw;  
+}
+.load-more {
+    display: flex;
+    justify-content: center;
+    padding: 2vh 0 3vh 0;
+}
+.load-more span{
+    color: white;
+    font-weight: bold;
+    border: 2px solid #4B367C;
+    padding: 2vh 8vh;
+}
+.thickline{
+    background-color: #4B367C;
+    width: 100%;
+    height: 2vh;
+}
+footer {
+    background-color: #17141F;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh 8vw;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 300px; 
+}
+
+.footer-column h3 {
+    color: white;
+    background-color: black;
+    width: fit-content;
+    text-decoration-line: underline;
+    text-decoration-color: #4B367C;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-column p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+.copyright {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.footer-bottom .fotterright a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+@media (max-width: 800px) {
+
+    .main {
+        padding: 0 4vw; 
+    }
+    .sticky {
+        padding: 0 1rem;
+    }
+
+    .navbar-content {
+        justify-content: space-between;
+    }
+
+    .hamburger-menu {
+        display: flex; 
+        order: 3; 
+    }
+
+    .logo-link {
+        order: 1; 
+        margin-right: auto; 
+    }
+
+    .theme, .search-icon {
+        display: none; 
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: #4B367C;
+        padding: 1rem 0;
+        gap: 0;
+        border-top: 1px solid #4a475e;
+    }
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-links a,
+    .dropbtn {
+        font-size: 1rem; 
+        width: 100%;
+        padding: 1rem 2rem;
+        border-radius: 0;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active-link {
+        background-color: black;
+    }
+
+    .dropdown {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdownbtn {
+        display: none; 
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block; 
+    }
+
+    .dropdown-content {
+        position: static; 
+        display: none; 
+        background-color: rgba(0, 0, 0, 0.2); 
+        box-shadow: none;
+        min-width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .dropdown-content a {
+        font-size: 0.9rem;
+        padding-left: 3rem; 
+    }
+
+    /* Popular section */
+    .popular {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .roller {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2vh;
+    }
+
+    .game {
+        height: auto;
+    }
+
+    .game img {
+        width: 80vw; 
+        height: auto;
+    }
+
+    .button {
+        padding-top: 2rem;
+    }
+    
+    .button button {
+        height: 10px;
+        width: 10px;
+    }
+
+    /* Recent sections */
+    .recent {
+        margin: 1rem 0;
+    }
+
+    .recentlyadded {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    .recentrow {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .recentrow img {
+        width: 80vw; 
+        height: auto;
+    }
+
+    .load-more span {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .fotterright {
+        text-align: center;
+    }
+
+    .footer-bottom .fotterright a {
+        display: inline-block;
+        padding: 0 0.2rem;
+    }
+}

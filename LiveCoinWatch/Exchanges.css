@@ -1,0 +1,304 @@
+.exchanges-content-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+    color: white;
+    border-radius: 10px;
+    background-color: #293143;
+}
+
+.exchanges-content-wrapper h1 {
+    font-size: 2.5vw;
+    padding-left: 2vw;
+    margin-bottom: 4vh;
+}
+
+.exchanges-filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #293143;
+    padding: 2vh 2vw;
+    border-radius: 1vh;
+    margin-bottom: 3vh;
+    flex-wrap: wrap;
+    gap: 2vh;
+}
+
+.filter-group-left,
+.filter-group-right {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+    border-radius: 10px;
+}
+
+.filter-group label {
+    font-size: .9vw;
+    color: #9DAABF;
+    margin-right: .5vw;
+}
+
+.filter-dropdown {
+    background-color: #343E56;
+    color: white;
+    border: 1px solid #1D2330;
+    border-radius: .5vh;
+    padding: 1vh .8vw;
+    font-size: .9vw;
+}
+
+.filter-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: .9vw;
+    color: white;
+    gap: .3vw;
+}
+
+.filter-checkbox input {
+    margin-right: .3vw;
+}
+
+.filter-btn-heart {
+    background-color: #343E56;
+    color: #9DAABF;
+    border: none;
+    border-radius: .5vh;
+    padding: 1vh .8vw;
+    font-size: .9vw;
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+    cursor: pointer;
+}
+
+.filter-btn-heart img {
+    height: 1.5vh;
+    filter: invert(60%) sepia(5%) saturate(1844%) hue-rotate(183deg) brightness(85%) contrast(81%);
+}
+
+.exchange-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+}
+
+.exchange-card {
+    background-color: #343E56;
+    border-radius: 1vh;
+    padding: 2vh 1.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.exchange-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    object-fit: contain;
+}
+
+.exchange-name {
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+    flex-grow: 1;
+}
+
+.exchange-name span {
+    color: #9DAABF;
+    font-size: .9vw;
+}
+
+.exchange-name h3 {
+    font-size: 1.2vw;
+    color: white;
+}
+
+.favorite-icon {
+    font-size: 1.5vw;
+    color: #9DAABF;
+    cursor: pointer;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid #1D2330;
+}
+
+.stat-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: .8vw;
+    color: #9DAABF;
+    margin-bottom: .5vh;
+}
+
+.stat-value {
+    font-size: 1.1vw;
+    color: white;
+    font-weight: 500;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-item .stat-label {
+    font-size: .8vw;
+}
+
+.stat-item .stat-value {
+    font-size: 1.1vw;
+    color: #4BC1BE;
+}
+.exchange-card:hover{
+    border:1px solid #47C2BE;
+}
+
+@media (max-width: 768px) {
+    .exchanges-content-wrapper {
+        width: 90vw;
+        padding-top: 3vh;
+    }
+
+    .exchanges-content-wrapper h1 {
+        font-size: 6vw;
+        text-align: center;
+        margin-bottom: 3vh;
+    }
+
+    .exchanges-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 3vh 4vw;
+    }
+
+    .filter-group-left,
+    .filter-group-right {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2vh;
+    }
+
+    .filter-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1vh;
+    }
+
+    .filter-group label {
+        font-size: 3.5vw;
+    }
+
+    .filter-dropdown,
+    .filter-checkbox,
+    .filter-btn-heart {
+        width: 100%;
+        font-size: 4vw;
+        padding: 1.5vh 3vw;
+    }
+
+    .filter-checkbox {
+        background-color: #343E56;
+        border-radius: .5vh;
+        padding: 1.5vh 3vw;
+    }
+
+    .exchange-grid {
+        grid-template-columns: 1fr;
+        gap: 2vh;
+    }
+
+    .exchange-card {
+        padding: 3vh 4vw;
+    }
+
+    .exchange-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .exchange-name span {
+        font-size: 3.5vw;
+    }
+
+    .exchange-name h3 {
+        font-size: 4.5vw;
+    }
+
+    .favorite-icon {
+        font-size: 6vw;
+    }
+
+    .card-stats {
+        flex-direction: row;
+        gap: 1.5vh;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .stat-group {
+        min-width: 30%;
+        flex-grow: 1;
+    }
+
+    .stat-label {
+        font-size: 3vw;
+    }
+
+    .stat-value {
+        font-size: 4vw;
+    }
+
+    .stat-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5vh;
+    }
+
+    .stat-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1d2330;
+        padding: 1.5vh 3vw;
+        border-radius: .5vh;
+    }
+
+    .stat-item .stat-label {
+        font-size: 3.5vw;
+    }
+
+    .stat-item .stat-value {
+        font-size: 4vw;
+    }
+}
