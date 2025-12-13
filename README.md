@@ -20,3 +20,8 @@ Original Link: <https://www.livecoinwatch.com/>
 
 Original Link: <https://www.loadshare.net/>
 Clone Link: <https://loadshare-rishab.netlify.app/>
+
+## Kore-Ai
+
+Original Link: <https://www.kore.ai/>
+Clone Link: <https://kore-ai-rishab.netlify.app/>
