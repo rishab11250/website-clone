@@ -1,0 +1,1025 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display:none;
+}
+
+nav{
+    width: 100vw;
+    height: 10vh;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.tag{
+  height: 7vh; 
+  width: 13vw;
+  display: flex;
+  align-items: center;
+}
+.tag img{
+    width: 100%;
+}
+.content{
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap:0.7rem;
+    width: 58vw;
+    font-size: 1.3rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown{
+   position: relative;
+   display: inline;
+   overflow: visible;
+   
+}
+
+/* Humberger */
+
+.humburger{
+     position: relative;
+     display:none;
+     overflow: visible;
+      box-shadow: none;
+   
+}
+
+.hum{
+height:auto;
+position: absolute;
+display:none;
+padding: 1rem;
+width: 80vw;
+right: 0;
+top: 8.6vw;
+background-color:white;
+font-size: 2rem;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+
+.humburger:hover .hum{
+    display: block;
+    z-index: 100;
+
+    
+}
+.hum a{
+    color:black;
+    display: block;
+    gap: 6rem;
+    padding: 0.5rem;
+}
+
+.hum a:hover{
+   background-color: rgb(206, 199, 199);
+}
+.toggle{
+    font-size: 3rem;
+}
+
+.dropbtn{
+border: none;
+font-size: 1.2rem;
+background-color: inherit;
+  padding: 0.8rem 1.2rem;
+  
+}
+.dropdown-content{
+height: auto;
+width: 10vw;
+position: absolute;
+display:none;
+padding: 1rem;
+background-color:white;
+font-size: 1rem;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+margin-top: 1.1rem;
+}
+.dropdown-content-1{
+height: auto;
+width: 13vw;
+position: absolute;
+display:none;
+padding: 1rem;
+background-color:white;
+font-size: 1rem;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+margin-top: 1.1rem;
+}
+.dropdown:hover .dropdown-content{
+    display: block;z-index: 100;
+
+    
+}
+.dropdown-content a{
+    color:black;
+    display: block;
+    gap: 5rem;
+    padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content-1 {
+    display: block;
+    
+}
+.dropdown-content-1 a{
+    color:black;
+    display: block;
+    gap: 5rem;
+    padding: 0.5rem;
+}
+.box-1{
+    height: 6vh;
+    width: 20vw;
+    background-color: green;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+header{
+   background-image: url("https://res.cloudinary.com/dv3jsenpu/image/upload/v1762417997/Header-Image-Corporate_cj8puo.jpg");
+   background-size:cover;
+   width: 100vw;
+   height: 90vh;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-repeat: no-repeat;
+
+}
+.container-1{
+    position: relative;
+   height:auto; 
+   width: 80vw;
+   display: flex;
+   margin: auto;
+   margin: auto;
+   justify-content: space-evenly;
+   z-index: 3;
+}
+.box-3{
+    padding: 2rem;
+    height:auto;
+    width: 36vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.box-3 h1{
+   font-size:  3rem;
+   font-weight: 700;
+}
+.box-3 p{
+  color: palevioletred;
+  font-size: 1.5rem;
+}
+.box-3 h3{
+   font-size: 2rem;
+   font-weight: 100;
+}
+.box-4{
+    height:auto;
+    width: 40vw;
+    color: white;
+    display: flex;
+    margin-top: 6rem;
+    flex-direction: column;
+
+}
+.box-4 img{
+    width: 100%;
+    margin: auto;
+}
+.btn{
+    height: 7vh;
+    width: 15vw;
+    border:1px solid green;
+    border-radius: 1rem;
+    color: green;
+    font-size: 1.5rem;
+}
+.top-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.top-img img {
+  width: 100%;
+  height:auto;
+  display: block;
+}
+
+
+.container-4{
+    height: auto;
+    margin: auto;
+    width: 100vw;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: red;
+    margin: 2rem;
+   
+}
+.container-5{
+    height: auto;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100vw;
+      flex-wrap: wrap;
+  align-items: center;
+}
+.box-5{
+    height: auto;
+    width:27vw ;
+    gap: 2rem;
+    
+}
+.box-5 img{
+    width:26vw ;
+  border-radius: 1rem;
+ 
+}
+.box-5 img:hover{
+  transform: scale(0.8);
+ transition: 2s ease-in-out ;
+
+}
+
+.box-5 h3{
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: rgb(249, 62, 62);
+}
+.box-5 p {
+   font-size: 1.2rem;
+   font-weight: 100;
+   color: rgb(28, 27, 27);
+}
+.container-6{
+    height: auto;
+    margin: auto;
+    width: 100vw;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:aquamarine;
+    margin: 2rem;
+   
+}
+
+.container-7{
+    margin-top: 3rem;
+   background-image: url("https://res.cloudinary.com/dv3jsenpu/image/upload/v1762417888/Company-Employee_ckcq5e.jpg");
+   background-size: 100vw auto;
+   width: 100vw;
+   height:auto;
+   background-repeat: no-repeat;
+}
+
+.container-8{
+   width: inherit;
+   height:inherit;
+   background-color: rgba(0,0,0, 0.5);
+   background-repeat: no-repeat;
+
+}
+.row-1{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: auto;
+   width: 100vw;
+
+}
+.row-2{
+    height: 20vh;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 100vw;
+ 
+}
+
+.image-wrapper {
+  width: 40vw; 
+  height: auto;
+}
+.image-wrapper  img{
+  width: 20vw; 
+  height: auto;
+  border-radius: 0.8rem;
+ box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.text-part1{
+    height: auto;
+    width:40vw ;
+}
+.text-part1 h3{
+   color: yellow;
+}
+.text-part1 p{
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.container-9{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 0.9rem;
+}
+.enquiry-1{
+   height: auto;
+   width: 30vw;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.enquiry-1 h1{
+  font-size: 3rem;
+  color: aquamarine;
+  font-weight: 700;
+  line-height: 1;
+
+}
+.enquiry-1 p{
+
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.enquiry-2{
+   height: auto;
+   width: 45vw;
+   border-radius: 0.5rem;
+   padding: 0.5rem;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
+}
+form{
+    height: auto;
+    width: 44vw;
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input{
+    height: 8vh;
+    width: 43vw;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1rem;
+    outline: 1px solid rgb(101, 98, 98);
+}
+
+select{
+    height: 8vh;
+    width: 43vw;
+    border-radius: 1rem;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    font-size: 1rem;
+    color: rgb(79, 77, 77);
+    outline: 1px solid rgb(101, 98, 98);
+}
+.Button{
+    padding: 0.7rem;
+    height: auto;
+    width: 44vw;
+    display: flex;
+    justify-content: end;
+}
+
+.Button button{
+height:6vh;
+width: 9vw;
+color: green;
+border-radius: 1rem;
+border: none;
+font-size: 1.5rem;
+outline: 1px solid green;
+}
+
+
+
+
+footer{
+    height: 50vh;
+    margin-top: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    border: 1.5px solid rgb(200, 196, 196);
+    padding: 0.5rem;
+    border: 1px solid;
+}
+.footerbox-1{
+    height: auto;
+    width: 20vw;
+    padding: 0.3rem;
+}
+.footerbox-1 img{
+   width: 100%;
+}
+.footerbox-1 h4{
+  font-size: 1rem;
+  font-weight: 100;
+ color: rgb(44, 43, 43);
+}
+.footerbox-2{
+    height: auto;
+    width: 20vw;
+    padding: 0.3rem;
+}
+.footerbox-2 a{
+  line-height: 1.5;
+}
+.footerbox-2 a:hover{
+    color: rgb(68, 157, 68);
+}
+.last-part{
+  justify-content: center;
+    padding: 0.5rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- 4K / Ultra-Wide Screens (Above 1921px) ---------- */
+@media (min-width:1921px) {
+  nav {
+    padding: 1rem 5rem;
+    height: 9vh;
+  }
+  .content {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+  .box-3 h1 { font-size: 4rem; }
+  .box-3 p { font-size: 2rem; }
+  .box-3 h3 { font-size: 2.5rem; }
+  .btn { width: 12vw; font-size: 1.7rem; }
+  footer {
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+}
+
+/* ---------- Laptop Large (1366px – 1920px) ---------- */
+@media (min-width:1366px) and (max-width:1920px) {
+  nav {
+    height: 10vh;
+    padding: 0.6rem 2rem;
+  }
+  .tag { width: 12vw; }
+  .content { width: 60vw; font-size: 1.3rem; }
+  .box-3 { width: 38vw; }
+  .box-4 img { width: 90%; }
+  footer {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+}
+
+/* ---------- Medium Laptop (1100px – 1365px) ---------- */
+@media (min-width:1100px) and (max-width:1365px) {
+  nav {
+    height: 9vh;
+    padding: 0.6rem 1.5rem;
+  }
+  .tag { width: 13vw; }
+  .content { width: 55vw; font-size: 1.2rem; }
+  .box-1 { width: 18vw; font-size: 1.2rem; }
+  .box-3 {
+    width: 40vw;
+    padding: 2rem;
+  }
+  .box-3 h1 { font-size: 2.8rem; }
+  .box-3 p { font-size: 1.2rem; }
+  .box-3 h3 { font-size: 1.7rem; }
+  .box-4 { width: 40vw; margin-top: 3rem; }
+  .box-4 img { width: 95%; }
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1.5rem;
+  }
+  .footerbox-1, .footerbox-2 { width: 25vw; }
+}
+
+/* ---------- Tablet / Small Laptop (768px – 1099px) ---------- */
+@media (min-width:768px) and (max-width:1099px) {
+  .humburger { display: block; }
+  .content, .box-1 { display: none; }
+  header {
+    background-position: center;
+    height: auto;
+  }
+  .container-1 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .box-3, .box-4 {
+    width: 85vw;
+    text-align: center;
+  }
+  .box-4 img {
+    width: 80%;
+    margin: auto;
+  }
+
+   .tag {
+      width: 70%;
+  }
+
+  .tag img {
+      width: 70%;
+  }
+  .top-img img {
+    width: 100%;
+  }
+  .container-5 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .box-5 {
+    width: 70vw;
+  }
+  .box-5 img {
+    width: 100%;
+  }
+  .row-2 {
+    flex-direction: column;
+  }
+  .image-wrapper img {
+    width: 50vw;
+  }
+  form {
+    width: 85vw;
+  }
+  input, select {
+    width: 80vw;
+  }
+
+.text-part1 {
+    width: 90vw;
+    line-height: 1.3;
+    margin-top: 1rem;
+  }
+  .container-7{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+    background-size:0;
+  }
+  .image-wrapper {
+  width: 100%; 
+  height: auto;
+  margin-top:1rem;
+}
+  .image-wrapper  img{
+  width: 100%; 
+  height: auto;
+  
+}
+.btn{
+    width: 30%;
+    margin: auto;
+    height:5vh;
+}
+  form {
+    width: 90vw;
+  }
+  input, select {
+    width: 85vw;
+  }
+  .container-9{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  .input{
+    height:auto;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  form{
+    width: 100%;
+    padding: 0.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .enquiry-1{
+    width: 100%;
+  }
+  .enquiry-2{
+    width: 100%;
+  }
+
+  .Button button {
+    width: 30vw;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .footerbox-1, .footerbox-2 {
+    width: 90%;
+  }
+}
+
+/* ---------- Large Mobile / Phablet (577px – 767px) ---------- */
+@media (min-width:577px) and (max-width:767px) {
+  .humburger { display: block; }
+  .content, .box-1 { display: none; }
+  nav {
+    height: auto;
+    padding: 0.5rem;
+  }
+  header {
+    height: auto;
+    background-position: center;
+  }
+  .container-1 {
+    flex-direction: column;
+    width: 95vw;
+    padding: 1rem;
+  }
+  .container-4{
+    width: 100%;
+    padding: 0.3rem;
+  }
+  .container-5{
+    width: 100%;
+    gap: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .tag {
+      width: 70%;
+  }
+
+  .tag img {
+      width: 70%;
+  }
+  .box-5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+
+  }
+  .box-5 img{
+    width: 100%;
+    
+  }
+  .box-3 {
+    width: 90%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .box-3 {
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+  }
+  .box-4 {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .box-4 img {
+    width: 100%;
+  }
+  .container-5 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .box-5 {
+    width: 85vw;
+  }
+  form {
+    width: 90vw;
+  }
+  input, select {
+    width: 85vw;
+  }
+
+.text-part1 {
+    width: 90vw;
+    line-height: 1.3;
+    margin-top: 1rem;
+  }
+  .container-7{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+    background-size:0;
+  }
+  .image-wrapper {
+  width: 100%; 
+  height: auto;
+  margin-top:1rem;
+}
+  .image-wrapper  img{
+  width: 100%; 
+  height: auto;
+  
+}
+.btn{
+    width: 70%;
+    margin: auto;
+    height:5vh;
+}
+  form {
+    width: 90vw;
+  }
+  input, select {
+    width: 85vw;
+  }
+  .container-9{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  .input{
+    height:auto;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  form{
+    width: 100%;
+    padding: 0.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .enquiry-1{
+    width: 100%;
+  }
+  .enquiry-2{
+    width: 100%;
+  }
+
+  .Button button {
+    width: 40vw;
+  }
+  footer {
+   width: 100%;
+   height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerbox-1, .footerbox-2 {
+    width: 100%;
+  }
+  .footerbox-1 h4, .footerbox-2 a {
+    font-size: 1.4rem;
+  }
+  .footerbox-1{
+    height: auto;
+    width: 100%;
+    padding: 0.3rem;
+
+
+}
+
+.last-part{
+    font-size: 1.5rem;
+    width: 100%;
+}
+}
+
+
+/* ---------- Mobile (Up to 576px) ---------- */
+@media (max-width:576px) {
+  nav {
+    height: auto;
+    padding: 0.5rem;
+  }
+  .humburger { display: block; }
+  .content, .box-1 { display: none; }
+  .tag {
+    width: 70%;
+    height: 100%;
+  }
+   .tag img {
+    height:auto;
+    width: 80%;
+  }
+  header {
+    background-position: center;
+    height: auto;
+  }
+  .container-1 {
+    flex-direction: column;
+    width: 95vw;
+    padding: 1rem;
+  }
+  .box-3 {
+    width: 90%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+   
+  .box-3 h1 { font-size: 2rem; }
+  .box-3 p { font-size: 1.2rem; }
+  .box-3 h3 { font-size: 1.5rem; }
+  .box-4 {
+    width: 90%;
+    margin-top: 1.5rem;
+  }
+  .box-4 img {
+    width: 100%;
+  }
+  .container-5 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .box-5 {
+    width: 90vw;
+  }
+  .box-5 img {
+    width: 100%;
+  }
+  .row-2 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+ 
+  .text-part1 {
+    width: 90vw;
+    line-height: 1.3;
+    margin-top: 1rem;
+  }
+  .container-7{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+    background-size:0;
+  }
+  .image-wrapper {
+  width: 100%; 
+  height: auto;
+  margin-top:1rem;
+}
+  .image-wrapper  img{
+  width: 100%; 
+  height: auto;
+  
+}
+.btn{
+    width: 70%;
+    margin: auto;
+    height:5vh;
+}
+  form {
+    width: 90vw;
+  }
+  input, select {
+    width: 85vw;
+  }
+  .container-9{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+  .input{
+    height:auto;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  form{
+    width: 100%;
+    padding: 0.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .enquiry-1{
+    width: 100%;
+  }
+  .enquiry-2{
+    width: 100%;
+  }
+
+  .Button button {
+    width: 45vw;
+  }
+  footer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 1rem;
+  }
+  .footerbox-1, .footerbox-2 {
+    width: 90%;
+  }
+  .last-part {
+    font-size: 1rem;
+  }
+  
+}
+
+
+/* ---------- Very Small Devices (Below 400px height) ---------- */
+@media (max-height:400px) {
+  .top-img {
+    position: relative;
+    margin-top: 2rem;
+  }
+  .top-img img {
+    object-fit: contain;
+    width: 100%;
+  }
+  header {
+    height: auto;
+  }
+}
