@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.our-story {
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+.heroImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.heroImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.chewy-about {
+    background-color: #0046BE;
+    padding: 40px 24px;
+    color: white;
+}
+
+.chewy-about h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.chewy-about p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+}
+
+.features-section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.feature-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-image {
+    flex: 1;
+}
+
+.feature-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.feature-content {
+    flex: 1;
+    padding: 60px 40px;
+}
+
+.feature-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.feature-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.testimonials-section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 24px;
+    background-color: #ffffff;
+}
+
+.testimonials-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #0046BE;
+    margin: 0 0 60px 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+}
+
+.testimonials-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.testimonial-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.customer-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.customer-info {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    font-family: Arial, sans-serif;
+    color: #0046BE;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .chewy-about h1 {
+        font-size: 36px;
+    }
+
+    .feature-content h2 {
+        font-size: 28px;
+    }
+
+    .testimonials-heading {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .chewy-about {
+        padding: 30px 20px;
+    }
+
+    .chewy-about h1 {
+        font-size: 28px;
+    }
+
+    .chewy-about p {
+        font-size: 14px;
+    }
+
+    .feature-item,
+    .feature-item.reverse {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .feature-content {
+        padding: 40px 20px;
+    }
+
+    .feature-content h2 {
+        font-size: 24px;
+    }
+
+    .feature-content p {
+        font-size: 14px;
+    }
+
+    .testimonials-section {
+        padding: 40px 20px;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .testimonials-heading {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .testimonial-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chewy-about h1 {
+        font-size: 24px;
+    }
+
+    .chewy-about p {
+        font-size: 13px;
+    }
+
+    .feature-content h2 {
+        font-size: 20px;
+    }
+
+    .testimonials-heading {
+        font-size: 20px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+}
