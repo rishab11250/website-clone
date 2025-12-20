@@ -9,9 +9,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: #333;
     overflow-x: hidden;
+    line-height: 1.5;
 }
 
-/* Navbar */
+/* --- NAVBAR --- */
 .navbar {
     background: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
@@ -23,6 +24,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: height 0.3s ease;
 }
 
 .logo {
@@ -30,6 +32,7 @@ body {
     font-weight: 700;
     color: #000;
     text-decoration: none;
+    flex-shrink: 0;
 }
 
 .logo-dot {
@@ -59,6 +62,7 @@ body {
     font-weight: 500;
     cursor: pointer;
     transition: color 0.2s;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -82,11 +86,11 @@ body {
     padding: 20px 0;
     opacity: 0;
     visibility: hidden;
-
     /* Standard dropdown animation */
     transform: translateY(-10px);
     transition: all 0.3s ease;
     margin-top: 10px;
+    z-index: 1100;
 }
 
 /* Standard hover effect */
@@ -132,7 +136,6 @@ body {
     top: 75px;
     /* Matches Navbar Height */
     left: 50%;
-
     /* Dimensions */
     width: 90vw;
     max-width: 1300px;
@@ -140,12 +143,9 @@ body {
     overflow: hidden;
     border-radius: 0 0 8px 8px;
     /* Rounded corners only at bottom */
-
     /* Initial Animation State for Mega Menu */
-    /* specific transform that includes centering logic */
     transform: translateX(-50%) translateY(-10px);
     margin-top: 0;
-    /* Remove standard margin to align with navbar bottom */
 }
 
 /* Specific Hover State for Mega Menu */
@@ -164,7 +164,6 @@ body {
     /* Ensure background is solid */
 }
 
-/* Rest of the styling remains the same */
 .mega-menu-column {
     padding: 40px;
 }
@@ -353,6 +352,7 @@ body {
     font-size: 15px;
     font-weight: 500;
     transition: color 0.2s;
+    white-space: nowrap;
 }
 
 .sign-in:hover {
@@ -370,6 +370,7 @@ body {
     letter-spacing: 1px;
     transition: all 0.3s;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .btn-cta:hover {
@@ -423,6 +424,7 @@ body {
     letter-spacing: 1px;
     border-radius: 4px;
     transition: all 0.3s;
+    white-space: nowrap;
 }
 
 .access-report:hover {
@@ -700,4 +702,220 @@ body {
     text-align: center;
     font-size: 14px;
     color: #888;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .navbar,
+    .gartner-banner,
+    .hero,
+    .features,
+    .footer,
+    .cookie-banner {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .nav-menu {
+        gap: 4px;
+    }
+
+    .nav-link {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .dropdown-mega {
+        width: 96vw;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .features-grid {
+        gap: 20px;
+    }
+
+    .footer-content {
+        gap: 30px;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar,
+    .gartner-banner,
+    .hero,
+    .features,
+    .footer,
+    .cookie-banner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 15px 20px;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        margin-top: 15px;
+        border-top: 1px solid #eee;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .navbar.nav-active .nav-menu {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 12px 0;
+        justify-content: space-between;
+    }
+
+    .nav-actions {
+        margin-left: auto;
+    }
+
+    .dropdown-mega,
+    .dropdown {
+        position: static;
+        width: 100%;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        margin-top: 0;
+        display: none;
+        background: #f9f9f9;
+    }
+
+    .nav-item:hover .dropdown-mega,
+    .nav-item:hover .dropdown {
+        display: block;
+    }
+
+    .mega-menu-content {
+        grid-template-columns: 1fr;
+    }
+
+    .features-column {
+        border: none;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mega-menu-column {
+        padding: 20px;
+    }
+
+    .accelerator-list {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .hero-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gartner-banner {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        align-items: stretch;
+    }
+
+    .gartner-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .access-report {
+        text-align: center;
+    }
+
+    .three-columns {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .column-card {
+        padding: 40px 30px;
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .features-header h2 {
+        font-size: 32px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-column ul {
+        margin-bottom: 10px;
+    }
+
+    .cookie-banner {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-actions {
+        display: none;
+    }
+
+    .sign-in {
+        display: none;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
 }
