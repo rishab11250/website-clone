@@ -13,6 +13,7 @@ main {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 .header {
@@ -548,6 +549,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    aspect-ratio: 1 / 1;
 }
 
 .favourite-image-container img {
@@ -853,10 +855,12 @@ main {
     border-radius: 20px;
     cursor: pointer;
 }
-.back-to-top svg path{
+
+.back-to-top svg path {
     fill: #1C49C2;
 }
-.back-to-top span{
+
+.back-to-top span {
     color: #1C49C2;
 }
 
@@ -948,4 +952,233 @@ main {
 
 .footer-bottom-links a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .product-cards-container,
+    .offer-cards-container,
+    .prices-grid-container,
+    .brands-grid-container,
+    .explore-grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .favourites-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .love-chewy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .header-bottom {
+        display: none;
+    }
+
+    .nav-item.region,
+    .nav-item.help {
+        display: none;
+    }
+
+    .searchBar {
+        min-width: 200px;
+    }
+
+    .project-belt {
+        grid-template-columns: 1fr;
+    }
+
+    .belt-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .shop-by-pet-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-cards-container,
+    .brands-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .offer-cards-container,
+    .favourites-container,
+    .prices-grid-container,
+    .explore-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .love-chewy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experts-footer-bar {
+        display: none;
+    }
+
+    .main-footer {
+        padding-top: 10px;
+        margin-top: 0;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+        border-bottom: none;
+    }
+
+    .footer-social {
+        display: none;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer-apps {
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .footer-bottom-links {
+        padding-top: 20px;
+        gap: 10px 15px;
+    }
+
+    .footer-bottom-links span {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-top {
+        padding: 8px 3vw;
+        gap: 2vw;
+    }
+
+    .chewy-logo {
+        width: 80px;
+    }
+
+    .nav-item.signIn span {
+        display: none;
+    }
+
+    .nav-item.cart span {
+        display: none;
+    }
+
+    .searchBar {
+        min-width: 100px;
+    }
+
+    .searchBar-input {
+        height: 40px;
+    }
+
+    .searchBar-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .project-belt {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px 0;
+    }
+
+    .project-belt>.belt-item:first-child {
+        display: none;
+    }
+
+    .belt-item {
+        padding: 15px;
+        min-height: 100px;
+    }
+
+    .belt-item h3 {
+        font-size: 1rem;
+    }
+
+    .belt-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .shop-by-pet h2,
+    .extra-offer-section h2,
+    .autoship-promo-section h2,
+    .more-favourites-section h2,
+    .holiday-spirit-section h2,
+    .great-prices-section h2,
+    .extra-discount-section h2,
+    .brands-section h2,
+    .explore-more-section h2,
+    .why-love-chewy-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .offer-cards-container,
+    .favourites-container,
+    .prices-grid-container,
+    .explore-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .product-cards-container,
+    .brands-grid-container,
+    .love-chewy-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .product-title {
+        min-height: 3.8em;
+        line-height: 1.25em;
+        font-size: 0.85rem;
+    }
+
+    .product-card {
+        padding: 8px;
+    }
+
+    .product-image {
+        max-width: 140px;
+        height: 140px;
+        margin: 10px auto;
+    }
+
+    .current-price {
+        font-size: 1rem;
+    }
+
+    .promo-banner {
+        font-size: 0.7rem;
+        padding: 6px;
+    }
+
+    .explore-card span {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+
+    .explore-card img {
+        min-height: 150px;
+    }
+
+    .warning-banner {
+        font-size: 0.85rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .brands-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
